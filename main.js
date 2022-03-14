@@ -1,5 +1,5 @@
 (() => {
-    const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyC83j_Zjh3W_PeSWr4oTmCAvzmxD6umT-RHl-qCa_ykf2oBEgNWq0eXMbSiimEyo00/exec';
+    const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwcTtm8LMl4HGTezRmMDdI_RmnVdjM4XFIEGzPOIbmBhR3h6mxqrSWWFTDWIsm-l9yo/exec';
 
     const form = document.querySelector('.form');
     const input = document.querySelector('.form-input');
@@ -11,10 +11,10 @@
     form.onsubmit = async (event) => {
         event.preventDefault();
 
+        const formData = new FormData(event.target);
+
         input.setAttribute('disabled', 'disabled');
         submit.setAttribute('disabled', 'disabled');
-
-        const formData = new FormData(event.target);
 
         formSpinner.classList.add('form-submit-loader-spin');
 
