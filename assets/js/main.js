@@ -46,4 +46,15 @@
             formSpinner.classList.remove('form-submit-loader-spin');
         }
     };
+
+    const sr = ScrollReveal({
+		origin: 'top',
+		distance: '80px',
+		duration: 2000,
+		reset: false
+	})
+
+	/*SCROLL HOME*/
+	sr.reveal('.content-info', {})
+	sr.reveal('.content-image', {origin:'left', delay: 400})
 })();
