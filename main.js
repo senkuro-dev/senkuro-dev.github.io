@@ -1,5 +1,5 @@
 (() => {
-    const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwcTtm8LMl4HGTezRmMDdI_RmnVdjM4XFIEGzPOIbmBhR3h6mxqrSWWFTDWIsm-l9yo/exec';
+    const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzXBZHpw2zZQAFz0IcSKc-vmeQBy0JFgoMEHatVTunNv10WsDaXby4dILLzdmKJ1aHG/exec';
 
     const form = document.querySelector('.form');
     const input = document.querySelector('.form-input');
