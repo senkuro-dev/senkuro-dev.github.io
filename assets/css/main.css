@@ -80,6 +80,12 @@ svg:not(:root) {
     min-height: 100vh;
     min-height: -webkit-fill-available;
 }
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        height: 100vh;
+    }
+}
+
 .content-image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,6 +269,12 @@ svg:not(:root) {
 }
 .content-social {
     margin-top: 24px;
+}
+.content-social__title {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+.content-social__cnt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -306,7 +318,7 @@ svg:not(:root) {
 .content-social__link span {
     margin-left: 8px;
 }
-.content-social > :not(:last-child) {
+.content-social__cnt > :not(:last-child) {
     margin-right: 1em;
 }
 .content-social__link:hover {
