@@ -32,7 +32,7 @@
 
             formMessage.textContent = result.code === 'DUPLICATE'
                 ? 'Спасибо, вы уже и так с нами 💖'
-                : 'Спасибо за подписку 🔥';
+                : 'Спасибо за подписку ❤️‍🔥';
 
             console.log('Success send email');
         } catch (error) {
@@ -44,6 +44,7 @@
             submit.removeAttribute('disabled');
         } finally {
             formSpinner.classList.remove('form-submit-loader-spin');
+            formMessage.classList.remove('form-message-hide');
         }
     };
 
